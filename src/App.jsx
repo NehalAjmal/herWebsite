@@ -60,7 +60,7 @@ function App() {
         </p>
 
         <div className="cta-group">
-          <a href="/HerBloom.apk" download style={{ textDecoration: 'none' }}>
+          <a href="https://github.com/NehalAjmal/herWebsite/releases/download/v1.0.0/herbloom.apk" download style={{ textDecoration: 'none' }}>
             <button className="btn-secondary" style={{ background: 'var(--text-primary)', color: 'white' }}>
               <FaAndroid size={24} />
               Get it on Android
