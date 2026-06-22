@@ -665,11 +665,12 @@ a {
     align-items: center;
   }
 
-  .glass-card {
+  .showcase-container > .glass-card {
     position: static;
     margin: 1rem auto;
     width: 90%;
-    transform: none !important;
+    transform: none;
+    animation: float-small 6s ease-in-out infinite;
   }
 
   .cta-group {
