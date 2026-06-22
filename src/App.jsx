@@ -74,7 +74,7 @@ function App() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
               <div style={{ width: 40, height: 40, borderRadius: 12, background: '#EDE9FE', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', color: 'var(--primary-purple)' }}><FiCalendar /></div>
               <div>
-                <h4 style={{ margin: 0, fontSize: '1rem' }}>Next Period</h4>
+                <h4 style={{ margin: 0, fontSize: '1rem' }}>Next Menstrual Cycle</h4>
                 <p style={{ margin: 0, fontSize: '0.8rem', color: '#6B7280' }}>In 4 Days</p>
               </div>
             </div>

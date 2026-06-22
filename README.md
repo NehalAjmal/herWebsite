@@ -2,6 +2,10 @@
   <img src="public/favicon.svg" alt="HerBloom Logo" width="120" />
   <h1>HerBloom Web Platform</h1>
   <p><strong>Your intelligent, secure, and personalized companion for every stage of your health journey.</strong></p>
+  <br />
+  <p>
+    <a href="https://herbloomapp.vercel.app"><strong>🌐 View Live Website</strong></a>
+  </p>
 </div>
 
 <br />
@@ -41,7 +45,7 @@ Make sure you have [Node.js](https://nodejs.org/) (version 18 or higher) install
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/herwebsite.git
+   git clone https://github.com/nehalajmal/herwebsite.git
    cd herwebsite
    ```
 
