@@ -60,7 +60,7 @@ function App() {
         </p>
 
         <div className="cta-group">
-          <a href="https://github.com/NehalAjmal/herWebsite/releases/download/v1.0.0/herbloom.apk" download style={{ textDecoration: 'none' }}>
+          <a href="https://github.com/NehalAjmal/herWebsite/releases/download/v1.0.2/HerBloom-v.1.0.2.apk" download style={{ textDecoration: 'none' }}>
             <button className="btn-secondary" style={{ background: 'var(--text-primary)', color: 'white' }}>
               <FaAndroid size={24} />
               Get it on Android
@@ -321,7 +321,7 @@ function App() {
             <a href="#" style={{ textDecoration: 'none' }}><h2 className="text-gradient" style={{ fontSize: '1.8rem', margin: 0 }}>HerBloom</h2></a>
             <p className="footer-tagline">Your intelligent, secure, and personalized companion for every stage of your health journey.</p>
           </div>
-          
+
           <div className="footer-grid">
             <div className="footer-col">
               <h4>Company</h4>
@@ -335,7 +335,7 @@ function App() {
             </div>
           </div>
         </div>
-        
+
         <div className="footer-bottom-modern">
           <p>&copy; {new Date().getFullYear()} HerBloom. All rights reserved.</p>
           <p style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', margin: 0 }}>Made with <FaHeart color="#EF4444" size={14} /> for women everywhere.</p>
