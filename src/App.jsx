@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
 import appIcon from './assets/icon.png';
-import { FaApple, FaAndroid, FaCheckCircle, FaStar, FaWhatsapp, FaRobot, FaBaby, FaHeart } from 'react-icons/fa';
+import { FaApple, FaAndroid, FaCheckCircle, FaStar, FaWhatsapp, FaRobot, FaBaby, FaHeart, FaDownload } from 'react-icons/fa';
 import { FiCalendar, FiLock, FiActivity, FiBookOpen, FiTarget, FiStar as FiStarOutline } from 'react-icons/fi';
 
 import Privacy from './Privacy';
@@ -10,6 +10,7 @@ import Contact from './Contact';
 
 function App() {
   const [hash, setHash] = useState(window.location.hash);
+  const [isInstallModalOpen, setIsInstallModalOpen] = useState(false);
 
   // Simple scroll reveal effect
   useEffect(() => {
@@ -59,14 +60,57 @@ function App() {
           Join thousands of women who trust HerBloom to track their cycle, find personalized insights, and secure their health data.
         </p>
 
-        <div className="cta-group">
-          <a href="https://github.com/NehalAjmal/herWebsite/releases/download/v1.0.2/HerBloom-v.1.0.2.apk" download style={{ textDecoration: 'none' }}>
-            <button className="btn-secondary" style={{ background: 'var(--text-primary)', color: 'white' }}>
-              <FaAndroid size={24} />
-              Get it on Android
-            </button>
-          </a>
+        <div className="cta-group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+          <button 
+            className="btn-secondary" 
+            style={{ background: 'var(--text-primary)', color: 'white' }}
+            onClick={() => setIsInstallModalOpen(true)}
+          >
+            <FaAndroid size={24} />
+            Get it on Android
+          </button>
         </div>
+
+        {/* Install Instructions Modal */}
+        {isInstallModalOpen && (
+          <div className="install-modal-overlay" onClick={() => setIsInstallModalOpen(false)}>
+            <div className="install-modal-content" onClick={(e) => e.stopPropagation()}>
+              <h3 style={{ margin: 0, fontSize: '1.5rem', color: 'var(--text-primary)' }}>How to Install HerBloom</h3>
+              <p style={{ margin: '1rem 0 0 0', fontSize: '0.95rem', color: 'var(--text-secondary)' }}>Since HerBloom is not yet on the Play Store, you will need to "sideload" the app. It's safe and easy!</p>
+              
+              <div className="install-steps">
+                <div className="step">
+                  <div className="step-number">1</div>
+                  <div className="step-text">
+                    <span className="step-title">Ignore the Download Warning</span>
+                    <p>Chrome flags all <code>.apk</code> files. Tap <strong>Download anyway</strong></p>
+                  </div>
+                </div>
+                <div className="step">
+                  <div className="step-number">2</div>
+                  <div className="step-text">
+                    <span className="step-title">Allow Unknown Apps</span>
+                    <p>When you tap to open the file, Android may ask for permission. Go to Settings and enable <strong>Allow from this source</strong></p>
+                  </div>
+                </div>
+                <div className="step">
+                  <div className="step-number">3</div>
+                  <div className="step-text">
+                    <span className="step-title">Bypass Play Protect</span>
+                    <p>If a red Play Protect screen appears, tap <strong>More details</strong> and then <strong>Install anyway</strong></p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="https://github.com/NehalAjmal/herWebsite/releases/download/v1.0.2/HerBloom-v.1.0.2.apk" download style={{ textDecoration: 'none', width: '100%', display: 'block', marginTop: '2rem' }}>
+                <button className="btn-download-massive" onClick={() => setIsInstallModalOpen(false)}>
+                  <FaDownload size={20} />
+                  Download APK Now
+                </button>
+              </a>
+            </div>
+          </div>
+        )}
 
         {/* Abstract UI Mockup */}
         <div className="showcase-container">
