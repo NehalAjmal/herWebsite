@@ -3,6 +3,7 @@ import './index.css';
 import appIcon from './assets/icon.png';
 import { FaApple, FaAndroid, FaCheckCircle, FaStar, FaWhatsapp, FaRobot, FaBaby, FaHeart, FaDownload } from 'react-icons/fa';
 import { FiCalendar, FiLock, FiActivity, FiBookOpen, FiTarget, FiStar as FiStarOutline } from 'react-icons/fi';
+import { Analytics } from '@vercel/analytics/react';
 
 import Privacy from './Privacy';
 import Terms from './Terms';
@@ -385,6 +386,7 @@ function App() {
           <p style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', margin: 0 }}>Made with <FaHeart color="#EF4444" size={14} /> for women everywhere.</p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
