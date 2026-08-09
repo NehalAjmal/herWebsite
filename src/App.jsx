@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
 import appIcon from './assets/icon.png';
-import { FaAndroid, FaCheckCircle, FaStar, FaWhatsapp, FaRobot, FaBaby, FaHeart, FaDownload } from 'react-icons/fa';
+import { FaApple, FaAndroid, FaCheckCircle, FaStar, FaWhatsapp, FaRobot, FaBaby, FaHeart, FaDownload } from 'react-icons/fa';
 import { FiCalendar, FiLock, FiActivity, FiBookOpen, FiTarget, FiStar as FiStarOutline } from 'react-icons/fi';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -13,7 +13,7 @@ function App() {
   const [hash, setHash] = useState(window.location.hash);
   const [isInstallModalOpen, setIsInstallModalOpen] = useState(false);
 
-  // Scroll reveal effect
+  // Simple scroll reveal effect
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll('.reveal');
@@ -49,27 +49,26 @@ function App() {
 
         <div className="hero-icon-wrapper">
           <div className="hero-icon-inner">
-            <img src={appIcon} alt="HerBloom Women's Health & Cycle Tracker App Icon" className="hero-icon" />
+            <img src={appIcon} alt="HerBloom" className="hero-icon" />
           </div>
         </div>
 
-        {/* Primary H1 Tag - Essential for Search Engines */}
         <h1>
-          HerBloom: Intelligent Menstrual Cycle Tracker & <br />
-          <span className="text-gradient">Women's Health Companion</span>
+          Every Stage. <br />
+          <span className="text-gradient">Every Milestone. Every Her.</span>
         </h1>
         <p>
-          Join thousands of women who trust HerBloom to track their cycle, manage PCOS and pregnancy goals, get AI-powered health insights, and secure their medical records.
+          Join thousands of women who trust HerBloom to track their cycle, find personalized insights, and secure their health data.
         </p>
 
         <div className="cta-group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-          <button
-            className="btn-secondary"
+          <button 
+            className="btn-secondary" 
             style={{ background: 'var(--text-primary)', color: 'white' }}
             onClick={() => setIsInstallModalOpen(true)}
           >
             <FaAndroid size={24} />
-            Get HerBloom on Android
+            Get it on Android
           </button>
         </div>
 
@@ -78,36 +77,36 @@ function App() {
           <div className="install-modal-overlay" onClick={() => setIsInstallModalOpen(false)}>
             <div className="install-modal-content" onClick={(e) => e.stopPropagation()}>
               <h3 style={{ margin: 0, fontSize: '1.5rem', color: 'var(--text-primary)' }}>How to Install HerBloom</h3>
-              <p style={{ margin: '1rem 0 0 0', fontSize: '0.95rem', color: 'var(--text-secondary)' }}>Since HerBloom is available directly via APK, you will need to "sideload" the app on Android. It's safe and easy!</p>
-
+              <p style={{ margin: '1rem 0 0 0', fontSize: '0.95rem', color: 'var(--text-secondary)' }}>Since HerBloom is not yet on the Play Store, you will need to "sideload" the app. It's safe and easy!</p>
+              
               <div className="install-steps">
                 <div className="step">
                   <div className="step-number">1</div>
                   <div className="step-text">
                     <span className="step-title">Ignore the Download Warning</span>
-                    <p>Chrome flags standard <code>.apk</code> files. Tap <strong>Download anyway</strong>.</p>
+                    <p>Chrome flags all <code>.apk</code> files. Tap <strong>Download anyway</strong></p>
                   </div>
                 </div>
                 <div className="step">
                   <div className="step-number">2</div>
                   <div className="step-text">
                     <span className="step-title">Allow Unknown Apps</span>
-                    <p>When you tap to open the file, Android may ask for permission. Go to Settings and enable <strong>Allow from this source</strong>.</p>
+                    <p>When you tap to open the file, Android may ask for permission. Go to Settings and enable <strong>Allow from this source</strong></p>
                   </div>
                 </div>
                 <div className="step">
                   <div className="step-number">3</div>
                   <div className="step-text">
                     <span className="step-title">Bypass Play Protect</span>
-                    <p>If a red Play Protect screen appears, tap <strong>More details</strong> and then <strong>Install anyway</strong>.</p>
+                    <p>If a red Play Protect screen appears, tap <strong>More details</strong> and then <strong>Install anyway</strong></p>
                   </div>
                 </div>
               </div>
-
+              
               <a href="https://github.com/NehalAjmal/herWebsite/releases/download/v1.0.2/HerBloom-v.1.0.2.apk" download style={{ textDecoration: 'none', width: '100%', display: 'block', marginTop: '2rem' }}>
                 <button className="btn-download-massive" onClick={() => setIsInstallModalOpen(false)}>
                   <FaDownload size={20} />
-                  Download Free APK Now
+                  Download APK Now
                 </button>
               </a>
             </div>
@@ -130,7 +129,7 @@ function App() {
           </div>
 
           <div className="glass-card card-2">
-            <h4 style={{ marginBottom: '1rem' }}>Daily Health Insight</h4>
+            <h4 style={{ marginBottom: '1rem' }}>Daily Insight</h4>
             <p style={{ fontSize: '0.9rem', color: '#6B7280', lineHeight: 1.5 }}>
               Your energy levels might dip today due to hormonal shifts. Try some light stretching or yoga.
             </p>
@@ -142,12 +141,13 @@ function App() {
           <div className="glass-card card-3">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.8rem' }}>
               <div>
-                <h4 style={{ fontSize: '1.05rem', margin: 0, marginBottom: '0.2rem' }}>Encrypted Vault</h4>
-                <p style={{ fontSize: '0.75rem', color: '#6B7280', margin: 0 }}>Private & End-to-End Secure</p>
+                <h4 style={{ fontSize: '1.05rem', margin: 0, marginBottom: '0.2rem' }}>Secure Vault</h4>
+                <p style={{ fontSize: '0.75rem', color: '#6B7280', margin: 0 }}>Encrypted & Private</p>
               </div>
               <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#E0E7FF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', color: 'var(--primary-purple)' }}><FiLock /></div>
             </div>
 
+            {/* Abstract Documents UI */}
             <div style={{ display: 'flex', gap: '0.6rem' }}>
               <div style={{ flex: 1, background: 'rgba(255,255,255,0.9)', borderRadius: '10px', padding: '0.6rem', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 6px rgba(0,0,0,0.02)' }}>
                 <div style={{ height: '6px', width: '60%', background: '#18191E', borderRadius: '3px', marginBottom: '0.4rem', opacity: 0.8 }}></div>
@@ -186,25 +186,21 @@ function App() {
         </div>
       </main>
 
-      {/* Core Features Section */}
       <section className="features-section">
-        <h2 className="section-title" style={{ marginBottom: '1rem' }}>
-          Complete Women's Wellness Features. <span className="text-gradient">In One App.</span>
-        </h2>
-        <p style={{ textAlign: 'center', color: 'var(--text-secondary)', marginBottom: '4rem', fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto 4rem auto' }}>
-          Custom-fit tracking and secure insights for every unique stage of your body's journey.
-        </p>
+        <h2 className="section-title" style={{ marginBottom: '1rem' }}>Everything you need. <span className="text-gradient">In one place.</span></h2>
+        <p style={{ textAlign: 'center', color: 'var(--text-secondary)', marginBottom: '4rem', fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto 4rem auto' }}>Custom fit for every unique stage of your journey.</p>
 
         <div className="bento-grid">
           {/* Large Primary Box */}
           <div className="bento-item bento-large bento-item-purple">
             <div className="bento-icon" style={{ color: 'var(--primary-purple)' }}><FiActivity /></div>
             <div className="bento-content">
-              <h3>Intelligent Cycle & Symptom Tracker</h3>
-              <p>Log your periods, track symptoms like cramps, mood shifts, or bloating, and record daily energy levels. HerBloom predicts your fertile window and next period with precision while helping you understand your long-term body rhythm.</p>
+              <h3>Intelligent Tracker</h3>
+              <p>Log your periods, track symptoms like cramps or bloating, and record your daily moods. HerBloom instantly predicts your fertile window and next period with precision. Log your flow levels from spotting to heavy, add personal notes, and let our intelligent system help you deeply understand your body's natural rhythm over time.</p>
             </div>
-
+            {/* Abstract Tracker Logs */}
             <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '0.8rem', paddingTop: '2rem' }}>
+              {/* Log Card 1 */}
               <div style={{ width: '100%', background: 'rgba(255,255,255,0.7)', borderRadius: '16px', padding: '1rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <div style={{ width: '40px', height: '40px', background: '#FCE7F3', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-pink)' }}>
                   <FiCalendar size={18} />
@@ -218,6 +214,7 @@ function App() {
                 </div>
               </div>
 
+              {/* Log Card 2 */}
               <div style={{ width: '100%', background: 'rgba(255,255,255,0.7)', borderRadius: '16px', padding: '1rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <div style={{ width: '40px', height: '40px', background: '#FCE7F3', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-pink)' }}>
                   <FiCalendar size={18} />
@@ -233,23 +230,23 @@ function App() {
             </div>
           </div>
 
-          {/* AI Box */}
+          {/* Regular Box */}
           <div className="bento-item bento-item-blue">
             <div className="bento-icon" style={{ color: '#2563EB' }}><FaRobot /></div>
             <div className="bento-content">
-              <h3>Ask AI Health Assistant</h3>
-              <p>Your 24/7 personalized wellness assistant. Get instant, science-backed guidance whenever you have questions.</p>
+              <h3>Ask AI</h3>
+              <p>Your personalized health assistant. Get instant, science-backed guidance anytime.</p>
             </div>
           </div>
 
-          {/* Learn Hub Box */}
+          {/* Tall Box */}
           <div className="bento-item bento-tall bento-item-amber">
             <div className="bento-icon" style={{ color: '#D97706' }}><FiBookOpen /></div>
             <div className="bento-content">
               <h3>Learn Hub</h3>
-              <p>Explore expert-reviewed health guides covering PCOS management, menopause transitions, pregnancy preparation, and daily well-being.</p>
+              <p>Explore expert-reviewed articles covering PCOS, Menopause, Pregnancy, and everyday well-being.</p>
             </div>
-
+            {/* Abstract Article List */}
             <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '0.8rem', paddingTop: '2rem' }}>
               <div style={{ width: '100%', height: '60px', background: 'rgba(255,255,255,0.7)', borderRadius: '12px', padding: '0.8rem', display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
                 <div style={{ width: '30px', height: '30px', background: '#FDE68A', borderRadius: '6px' }}></div>
@@ -266,94 +263,64 @@ function App() {
             </div>
           </div>
 
-          {/* Custom Goals Box */}
+          {/* Regular Box */}
           <div className="bento-item bento-item-pink">
             <div className="bento-icon" style={{ color: '#DB2777' }}><FiTarget /></div>
             <div className="bento-content">
-              <h3>Custom Goal Modes</h3>
-              <p>Switch instantly between Cycle Tracking, Conceiving/Fertility, Pregnancy Tracking, and Menopause modes.</p>
+              <h3>Custom Goals</h3>
+              <p>Switch between Tracking, Conceiving, Pregnancy, and Menopause modes instantly.</p>
             </div>
           </div>
 
-          {/* Unlock Premium Box */}
+          {/* Wide Box */}
           <div className="bento-item bento-wide bento-item-dark">
             <div className="bento-icon" style={{ color: '#FBBF24' }}><FaStar /></div>
             <div className="bento-content">
-              <h3 style={{ marginBottom: '1.5rem' }}>Unlock HerBloom Premium</h3>
+              <h3 style={{ marginBottom: '1.5rem' }}>Unlock Premium</h3>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.8rem', color: '#E5E7EB', fontSize: '0.95rem', lineHeight: 1.5 }}>
                   <FaCheckCircle color="#FBBF24" size={18} style={{ marginTop: '0.2rem', flexShrink: 0 }} />
-                  <span><strong>Unlimited encrypted vault storage</strong> for medical reports and prescriptions</span>
+                  <span><strong>Unlimited vault storage</strong> for your medical records</span>
                 </li>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.8rem', color: '#E5E7EB', fontSize: '0.95rem', lineHeight: 1.5 }}>
                   <FaCheckCircle color="#FBBF24" size={18} style={{ marginTop: '0.2rem', flexShrink: 0 }} />
-                  <span><strong>50 dedicated Ask AI messages</strong> per day for health questions</span>
+                  <span><strong>50 dedicated Ask AI</strong> messages per day</span>
                 </li>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.8rem', color: '#E5E7EB', fontSize: '0.95rem', lineHeight: 1.5 }}>
                   <FaCheckCircle color="#FBBF24" size={18} style={{ marginTop: '0.2rem', flexShrink: 0 }} />
-                  <span><strong>Advanced cycle analytics</strong> and personalized symptom trends</span>
+                  <span><strong>Advanced cycle insights</strong> and personalized tracking</span>
                 </li>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.8rem', color: '#E5E7EB', fontSize: '0.95rem', lineHeight: 1.5 }}>
                   <FaCheckCircle color="#FBBF24" size={18} style={{ marginTop: '0.2rem', flexShrink: 0 }} />
-                  <span><strong>Priority 1-on-1 support</strong> directly from the founding team</span>
+                  <span><strong>Priority support</strong> directly from our experts</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Founders Chat Box */}
+          {/* Regular Box */}
           <div className="bento-item bento-item-green">
             <div className="bento-icon" style={{ color: '#059669' }}><FaWhatsapp /></div>
             <div className="bento-content">
-              <h3>Live Founder Support</h3>
-              <p>Have questions or feedback? Message the founding team directly via WhatsApp for fast support.</p>
+              <h3>Founders Chat</h3>
+              <p>Need help? Chat directly with the founders via WhatsApp for instant support.</p>
             </div>
           </div>
 
-          {/* Encrypted Vault Box */}
+          {/* Regular Box */}
           <div className="bento-item bento-item-gray">
             <div className="bento-icon" style={{ color: '#4B5563' }}><FiLock /></div>
             <div className="bento-content">
-              <h3>Encrypted Health Vault</h3>
-              <p>Upload blood test reports, doctor notes, and prescriptions with bank-grade encryption.</p>
+              <h3>Secure Vault</h3>
+              <p>Store your lab reports and prescriptions securely with end-to-end encryption.</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SEO-Optimized FAQ Section */}
-      <section className="faq-section" style={{ maxWidth: '900px', margin: '4rem auto', padding: '0 1.5rem' }}>
-        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-          Frequently Asked Questions
-        </h2>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-          <div style={{ background: 'rgba(255,255,255,0.8)', padding: '1.5rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.05)' }}>
-            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.15rem' }}>Is my personal health data completely private in HerBloom?</h3>
-            <p style={{ margin: 0, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Yes. HerBloom utilizes strict end-to-end encryption for your documents in the Secure Vault. Your personal logs, period cycles, and uploaded medical documents remain completely private to you.
-            </p>
-          </div>
-
-          <div style={{ background: 'rgba(255,255,255,0.8)', padding: '1.5rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.05)' }}>
-            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.15rem' }}>Can I use HerBloom if I have irregular cycles or PCOS?</h3>
-            <p style={{ margin: 0, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Absolutely. HerBloom is designed to adapt to irregular cycles, PCOS, perimenopause, and varying symptoms over time through our custom health modes and AI insights.
-            </p>
-          </div>
-
-          <div style={{ background: 'rgba(255,255,255,0.8)', padding: '1.5rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.05)' }}>
-            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.15rem' }}>How do I install HerBloom on Android?</h3>
-            <p style={{ margin: 0, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Click on the "Get it on Android" button to download our official APK file directly. Simply follow the quick onscreen prompts to approve installation on your Android device.
-            </p>
           </div>
         </div>
       </section>
 
       <section className="bottom-cta">
         <h2>Ready to prioritize your health?</h2>
-        <p>Join thousands of women on HerBloom and start your journey toward clearer insights and better wellness.</p>
+        <p>Join HerBloom today and start your journey to better wellness, tracking, and understanding.</p>
         <button className="btn-primary" style={{ padding: '1.25rem 3rem', fontSize: '1.2rem', margin: '0 auto' }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           Download HerBloom Free
         </button>
@@ -379,7 +346,7 @@ function App() {
         <a href="#" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="logo-container">
             <div className="nav-icon-wrapper">
-              <img src={appIcon} alt="HerBloom Logo Icon" className="nav-icon" />
+              <img src={appIcon} alt="HerBloom Icon" className="nav-icon" />
             </div>
             <div className="logo">HerBloom</div>
           </div>
