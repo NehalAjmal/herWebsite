@@ -32,11 +32,11 @@ export default function Terms() {
             <p style={{ marginBottom: '2.5rem' }}>Your health information belongs to you. By using HerBloom, you grant us permission to securely process and store your information solely for providing app functionality and services. You may delete your account and associated data at any time.</p>
 
             <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '1rem', fontSize: '1.3rem' }}>5. HerBloom Free Plan</h2>
-            <p style={{ marginBottom: '2.5rem' }}>The Free Plan includes access to core HerBloom features. Free users may upload and store up to 3 health documents including Ultrasound reports, Blood reports, Prescriptions, Medical records, and Diagnostic reports. Additional storage requires a HerBloom Pro subscription.</p>
+            <p style={{ marginBottom: '2.5rem' }}>The Free Plan includes access to core HerBloom features. Free users may upload and store up to <strong>5 health documents</strong> (including Ultrasound reports, Blood reports, Prescriptions, Medical records, and Diagnostic reports) and receive up to <strong>10 AI messages per day</strong>. Additional storage and message volume require a HerBloom Pro subscription.</p>
 
             <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '1rem', fontSize: '1.3rem' }}>6. HerBloom Pro Subscription</h2>
             <p style={{ marginBottom: '0.5rem' }}><strong>Subscription Plans:</strong> Monthly Plan: ₹149/month | Yearly Plan: ₹1199/year</p>
-            <p style={{ marginBottom: '0.5rem' }}><strong>Pro Benefits:</strong> Unlimited Health Vault storage, Extended AI Assistant access, Advanced health insights, Future premium tools and features, and Priority support.</p>
+            <p style={{ marginBottom: '0.5rem' }}><strong>Pro Benefits:</strong> Unlimited Health Vault document storage, Expanded access of up to 50 AI messages per day, Advanced health & cycle insights, Future premium tools and features, and Priority support.</p>
             <p style={{ marginBottom: '0.5rem' }}><strong>Payment Process:</strong> Payments are currently processed manually through UPI (UPI ID: 9250615962@ybl). After making a payment, users may share their payment confirmation through WhatsApp.</p>
             <p style={{ marginBottom: '2.5rem' }}><strong>Refund Policy:</strong> Refund requests are reviewed on a case-by-case basis. For payment-related issues, please contact HerBloom Support through WhatsApp.</p>
 

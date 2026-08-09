@@ -50,9 +50,9 @@ export default function Privacy() {
             <p style={{ marginBottom: '1.5rem' }}>We may work with trusted technology providers that help us operate the app, including Authentication providers, Database providers, Cloud storage providers, and AI service providers. These providers only process information necessary to provide HerBloom's features and are expected to maintain appropriate security standards.</p>
             <p style={{ marginBottom: '2.5rem' }}>We may disclose information if required by law or to protect the safety, rights, or security of our users and services.</p>
 
-            <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '1rem', fontSize: '1.3rem' }}>4. Health Vault</h2>
-            <p style={{ marginBottom: '0.5rem' }}><strong>Free Plan:</strong> Users can store up to 3 health documents including Ultrasound reports, Prescriptions, Blood reports, and Medical records.</p>
-            <p style={{ marginBottom: '0.5rem' }}><strong>HerBloom Pro:</strong> Users receive Unlimited document storage, Expanded Health Vault capacity, and Future advanced storage features.</p>
+            <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '1rem', fontSize: '1.3rem' }}>4. Health Vault & Service Limits</h2>
+            <p style={{ marginBottom: '0.5rem' }}><strong>Free Plan:</strong> Users can store up to 5 health documents (Ultrasound reports, Prescriptions, Blood reports, Diagnostic records) and receive up to 10 AI messages per day.</p>
+            <p style={{ marginBottom: '0.5rem' }}><strong>HerBloom Pro:</strong> Users receive Unlimited document storage, up to 50 AI messages per day, Advanced insights, and Priority support.</p>
             <p style={{ marginBottom: '1.5rem' }}>Uploaded files are never sold or shared for advertising purposes.</p>
 
             <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '1rem', fontSize: '1.3rem' }}>5. Data Security</h2>

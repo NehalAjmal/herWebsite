@@ -283,7 +283,7 @@ function App() {
                 </li>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.8rem', color: '#E5E7EB', fontSize: '0.95rem', lineHeight: 1.5 }}>
                   <FaCheckCircle color="#FBBF24" size={18} style={{ marginTop: '0.2rem', flexShrink: 0 }} />
-                  <span><strong>20 dedicated Ask AI</strong> messages per day</span>
+                  <span><strong>50 dedicated Ask AI</strong> messages per day</span>
                 </li>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.8rem', color: '#E5E7EB', fontSize: '0.95rem', lineHeight: 1.5 }}>
                   <FaCheckCircle color="#FBBF24" size={18} style={{ marginTop: '0.2rem', flexShrink: 0 }} />
